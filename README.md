@@ -36,7 +36,6 @@ nome = "João"
 puts "Olá, meu nome é #{nome}"
 ```
 
-
 ### Estrutura condicional
 
 - **if / elsif / else**
@@ -70,14 +69,70 @@ mes = gets.chomp.to_i
 
 case mes
 when 1..3
-    puts "Primeiro semestre"
+    puts "Primeiro trimestre"
 when 4..6
-    puts "Segundo semestre"
+    puts "Segundo trimestre"
 when 7..9
-    puts "Terceiro semestre"
+    puts "Terceiro trimestre"
 when 10..12
-    puts "Quarto semestre"
+    puts "Quarto trimestre"
 else
     puts "Valor não encontrado"
+end
+```
+
+### Estrutura iteração
+
+- **for**
+```ruby
+frutas = ["Maçã", "Uva", "Banana"]
+
+for fruta in frutas
+    puts fruta
+end
+```
+
+- **while**
+```ruby
+num = 1
+
+while (num < 100)
+    puts num
+    num += 1
+end
+```
+
+- **times**
+```ruby
+x = 5
+
+# Inline
+x.times {puts "Hello World!"} 
+
+# Block
+x.times do
+    puts "Hello World!" 
+end
+
+# Block + Index
+x.times do |count|
+    puts "#{count} - Hello World!" 
+end
+```
+
+- **loop do**
+```ruby
+count = 0
+
+loop do
+
+    puts "Contador: #{count}"
+
+    if count == 10
+        break
+    end
+
+    count += 1
+
 end
 ```
