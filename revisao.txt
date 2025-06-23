@@ -1,1 +1,106 @@
-# Texto de revisão...
+Coleção (Collections)
+
+# Array
+
+livros = []
+
+@ Métodos array
+
+- push
+- insert
+- first
+- last
+- count
+- length
+- empty
+- include
+- delete
+- pop
+- shift
+
+# Hashes
+
+animais = Hash.new
+animais = {ave: 'Tucano', mamifero: 'Cachorro', repti: 'Lagarto'}
+
+@ Métodos hash
+
+- keys
+- values
+- delete
+- size
+- empty
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Estrutura de repetição
+
+# Each
+
+@ Each com array
+
+nomes = ['Marcos', 'João', 'Marcelo']
+
+nomes.each do |nome|
+	puts |nome|
+end
+
+@ Each com hash
+
+cursos = {'Curso 1' => 'Ruby', 'Curso 2' => 'Go', 'Curso 3' => 'Python'}
+
+cursos.each do |key, value|
+	puts "#{key} - "{value}"
+end
+
+# Map
+
+numeros = [2, 3, 4, 5]
+
+new_numeros = numeros.map do |x|
+	x * 5
+end
+
+numeros.map! do |a|
+	a * a
+end
+
+# Select
+
+@ Array
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+selecionados = numeros.select do |n|
+	n > 5
+end
+
+@ Hash
+numeros = {0 => 'zero', 1 => 'um', 2 => 'dois', 3 => 'tres'}
+
+selecionados = numeros.select do |key, value|
+	key == 0
+end
