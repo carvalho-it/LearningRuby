@@ -36,8 +36,7 @@ nome = "João"
 puts "Olá, meu nome é #{nome}"
 ```
 
-### Estrutura condicional
-
+### Estrutura de condição
 - **if / elsif / else**
 ```ruby
 name = "João"
@@ -81,7 +80,7 @@ else
 end
 ```
 
-### Estrutura iteração
+### Estrutura de iteração
 
 - **for**
 ```ruby
@@ -134,5 +133,90 @@ loop do
 
     count += 1
 
+end
+```
+
+### Collections
+
+- **Arrays**
+```ruby
+livros = ['Livro 1', 'Livro 2', 'Livro 3']
+```
+
+- **Hashes**
+```ruby
+animais = {ave: 'Tucano', mamifero: 'Cachorro', reptio: 'Lagarto'}
+```
+
+#### Métodos Array
+- `push`
+- `insert`
+- `first`
+- `last`
+- `count`
+- `length`
+- `empty`
+- `include`
+- `delete`
+- `pop`
+- `shift`
+
+#### Métodos hash
+- `keys`
+- `values`
+- `delete`
+- `size`
+- `empty`
+
+### Estrutura de repetição
+
+- **Each com array**
+```ruby
+nomes = ['Marcos', 'João', 'Marcelo']
+
+nomes.each do |nome|
+    puts |nome|
+end
+```
+
+- **Each com hash**
+```ruby
+cursos = {'Curso 1' => 'Ruby', 'Curso 2' => 'Go', 'Curso 3' => 'Python'}
+
+cursos.each do |key, value|
+	puts "#{key} - "{value}"
+end
+```
+
+- **Map**
+
+```ruby
+numeros = [2, 3, 4, 5]
+
+# Map sem alteração
+new_numeros = numeros.map do |x|
+	x * 5
+end
+
+# Map com alteração
+numeros.map! do |a|
+	a * a
+end
+```
+
+- **Select**
+```ruby
+# Array
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+selecionados = numeros.select do |n|
+	n > 5
+end
+
+# Hash
+numeros = {0 => 'zero', 1 => 'um', 2 => 'dois', 3 => 'tres'}
+
+selecionados = numeros.select do |key, value|
+	key == 0
 end
 ```
