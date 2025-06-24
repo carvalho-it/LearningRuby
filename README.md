@@ -220,3 +220,42 @@ selecionados = numeros.select do |key, value|
 	key == 0
 end
 ```
+
+### Métodos
+
+- **def**
+```ruby
+def hello
+    puts "Hello World!"
+end
+
+# Parâmetros
+def hello(x)
+    puts x
+end
+```
+
+### Gems
+
+- **command**
+```shell
+gem install <lib>
+```
+
+- **require**
+```ruby
+require <lib>
+```
+
+### Bundler
+- **command**
+```shell
+gem install bundler
+
+bundler # instalar as gems do Gemfile
+```
+- **Gemfile**
+```ruby
+source 'https://rubygems.org'
+gem <lib>
+```
