@@ -175,7 +175,7 @@ animais = {ave: 'Tucano', mamifero: 'Cachorro', reptio: 'Lagarto'}
 nomes = ['Marcos', 'João', 'Marcelo']
 
 nomes.each do |nome|
-    puts |nome|
+    puts nome
 end
 ```
 
@@ -184,7 +184,7 @@ end
 cursos = {'Curso 1' => 'Ruby', 'Curso 2' => 'Go', 'Curso 3' => 'Python'}
 
 cursos.each do |key, value|
-	puts "#{key} - "{value}"
+	puts "#{key} - #{value}"
 end
 ```
 
