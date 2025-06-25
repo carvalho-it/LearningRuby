@@ -259,3 +259,40 @@ bundler # instalar as gems do Gemfile
 source 'https://rubygems.org'
 gem <lib>
 ```
+
+### Poo
+
+- **classe**
+```ruby
+class Televisao
+    def turn_on
+        'Televisão ligada'
+    end
+
+    def shutdown
+        'Televisão desligada'
+    end
+end
+```
+
+- **objeto**
+```ruby
+televisao = Televisao.new
+puts televisao.shutdown 
+# Output: Televisão desligada
+```
+
+- **herança**
+```ruby
+class Animal
+    def dormir
+        'Zzzzz'
+    end
+end
+
+class Gato < Animal
+    def miar
+        'miau'
+    end
+end
+```
