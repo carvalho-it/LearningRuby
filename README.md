@@ -296,3 +296,30 @@ class Gato < Animal
     end
 end
 ```
+
+- **variaveis**
+```ruby
+$var    # global
+@@var   # class
+@var    # instance
+```
+
+- **atributos**
+```ruby
+class Aluno
+    attr_acessor :nome, :idade
+end
+```
+
+- **construtores**
+```ruby
+class Pessoa
+    def initialize(nome, idade)
+        @nome = nome
+        @idade = idade
+    end
+end
+
+# Chamada
+pessoa = Pessoa.new('Marcos', 23)
+```
